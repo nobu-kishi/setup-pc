@@ -35,9 +35,15 @@ alias -g @g="| grep"
 alias -g @l="| less"
 
 # 環境変数
+export PATH="$HOME/repo/tools/azure:$PATH"
+export PATH="$HOME/repo/tools/azure:$PATH"
 export PATH="$HOME/repo/tools/utils:$PATH"
 export PATH="$HOME/repo/tools/git:$PATH"
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+## direnv
+export EDITOR=code
+eval "$(direnv hook zsh)"
 
 # git-promptの設定
 # https://qiita.com/mikan3rd/items/d41a8ca26523f950ea9d
