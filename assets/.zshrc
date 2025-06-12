@@ -1,7 +1,7 @@
 # エイリアス
 alias ll="ls -la"
-alias zc="vi $HOME/.zshrc"
-alias szc="source $HOME/.zshrc"
+alias sc="vi $HOME/.zshrc"
+alias ssc="source $HOME/.zshrc"
 alias vc="vi $HOME/.vimrc"
 alias ac="vi $HOME/.aws/config"
 alias hg="history | grep "
