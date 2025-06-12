@@ -1,7 +1,7 @@
 # エイリアス
 alias ll="ls -la"
-alias zc="vi $HOME/.zshrc"
-alias szc="source $HOME/.zshrc"
+alias rc="vi $HOME/.zshrc"
+alias src="source $HOME/.zshrc"
 alias vc="vi $HOME/.vimrc"
 alias ac="vi $HOME/.aws/config"
 alias hg="history | grep "
@@ -38,6 +38,10 @@ alias -g @l="| less"
 export PATH="$HOME/repo/tools/utils:$PATH"
 export PATH="$HOME/repo/tools/git:$PATH"
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+## direnv
+export EDITOR=code
+eval "$(direnv hook zsh)"
 
 # git-promptの設定
 # https://qiita.com/mikan3rd/items/d41a8ca26523f950ea9d
