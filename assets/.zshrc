@@ -25,11 +25,15 @@ alias dri="docker rmi"
 
 ## Terraform
 alias tf="terraform"
+alias tfc="terraform console"
+alias tfi="terraform init"
 alias tfp="terraform plan"
+alias tfpl="terraform plan -no-color | tee plan_$(date +%Y%m%d_%H%M%S).log"
 alias tfv="terraform validate"
 alias tft="terraform fmt --recursive"
 alias tftp="terraform fmt --recursive ../../"
 alias tfaa="terraform apply -auto-approve"
+alias tfaal="terraform apply -auto-approve -no-color | tee apply_$(date +%Y%m%d_%H%M%S).log"
 
 alias -g @g="| grep"
 alias -g @l="| less"
