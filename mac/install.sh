@@ -28,6 +28,7 @@ brew install --cask session-manager-plugin
 brew install --cask docker
 brew install awscli
 brew install azure-cli
+brew install tflint
 brew install direnv
 brew install asdf
 brew install git
