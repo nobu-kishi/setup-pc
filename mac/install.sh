@@ -35,6 +35,7 @@ brew install git
 brew install gh
 brew install jq
 brew install tree
+brew install fzf
 brew install yt-dlp
 brew install libreoffice-language-pack --language=ja
 brew install mas
