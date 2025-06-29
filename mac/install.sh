@@ -13,6 +13,7 @@ while true; do
 done 2>/dev/null &
 KEEP_ALIVE_PID=$!
 
+brew install --cask microsoft-edge
 brew install --cask visual-studio-code
 brew install --cask chatgpt
 brew install --cask commander-one
@@ -26,6 +27,7 @@ brew install --cask edrawmind
 brew install --cask drawio
 brew install --cask session-manager-plugin
 brew install --cask docker
+brew install gemini-cli
 brew install awscli
 brew install azure-cli
 brew install tflint
