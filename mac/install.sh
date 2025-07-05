@@ -15,6 +15,7 @@ KEEP_ALIVE_PID=$!
 
 brew install --cask microsoft-edge
 brew install --cask visual-studio-code
+brew install --cask eclipse-java
 brew install --cask chatgpt
 brew install --cask commander-one
 brew install --cask notion
@@ -38,6 +39,7 @@ brew install gh
 brew install jq
 brew install tree
 brew install fzf
+brew install neovim
 brew install yt-dlp
 brew install libreoffice-language-pack --language=ja
 brew install mas
