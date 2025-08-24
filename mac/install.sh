@@ -20,6 +20,7 @@ brew install --cask chatgpt
 brew install --cask commander-one
 brew install --cask notion
 brew install --cask notion-calendar
+brew install --cask obsidian
 brew install --cask vlc
 brew install --cask parallels@19
 brew install --cask slack
