@@ -10,7 +10,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
-## Docker
+# Docker
 alias d="docker"
 alias dc="docker compose"
 alias dcb="docker compose build"
@@ -24,7 +24,7 @@ alias di="docker images"
 alias dr="docker rm"
 alias dri="docker rmi"
 
-## Terraform
+# Terraform
 alias tf="terraform"
 alias tfc="terraform console"
 alias tfi="terraform init"
@@ -48,9 +48,10 @@ export PATH="$HOME/repo/tools/aws:$PATH"
 export PATH="$HOME/repo/tools/azure:$PATH"
 export PATH="$HOME/repo/tools/utils:$PATH"
 export PATH="$HOME/repo/tools/git:$PATH"
+export PATH="$HOME/repo/tools/docker:$PATH"
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
-## direnv
+# direnv
 export EDITOR=vim
 eval "$(direnv hook zsh)"
 
@@ -61,13 +62,13 @@ fpath=($HOME/.zsh $HOME/.zsh $HOMEBREW_PREFIX/share/zsh/site-functions /usr/loca
 zstyle ':completion:*:*:git:*' script $HOME/.zsh/git-completion.bash
 autoload -Uz compinit && compinit
 
-## プロンプトのオプション表示設定
+# プロンプトのオプション表示設定
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUPSTREAM=auto
 
-## プロンプトの表示設定(好きなようにカスタマイズ可)
+# プロンプトの表示設定(好きなようにカスタマイズ可)
 setopt PROMPT_SUBST
 PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%s)")%f
 \$ '
