@@ -51,7 +51,7 @@ export PATH="$HOME/repo/tools/git:$PATH"
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 ## direnv
-export EDITOR=code
+export EDITOR=vim
 eval "$(direnv hook zsh)"
 
 # git-promptの設定
