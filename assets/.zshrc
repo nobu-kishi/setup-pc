@@ -41,6 +41,21 @@ alias tfaa="terraform apply -auto-approve"
 function tfpl() { terraform plan -no-color | tee "plan_$(date +%Y%m%d_%H%M%S).log"; }
 function tfaal() { terraform apply -auto-approve -no-color | tee "apply_$(date +%Y%m%d_%H%M%S).log"; }
 
+# git
+alias g="git"
+alias ga="git add"
+alias gca="git commit --amend"
+alias gcm="git commit -m"
+alias gpl="git pull"
+alias gph="git push"
+alias gpf="git push --force"
+alias gmr="git merge --no-edit"
+alias gmra="git merge --abort"
+alias gl="git log --oneline --graph --decorate --all"
+alias grc="git rebase --continue"
+alias gra="git rebase --abort"
+alias grs="git rebase --skip"
+
 # path
 export PATH="$HOME/repo/tools/aws:$PATH"
 export PATH="$HOME/repo/tools/azure:$PATH"
