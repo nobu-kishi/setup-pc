@@ -15,6 +15,12 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
+# brew
+alias b="brew"
+alias bi="brew install"
+alias bu="brew update"
+alias bucg="brew upgrade --cask --greedy"
+
 # Docker
 alias d="docker"
 alias dc="docker compose"
