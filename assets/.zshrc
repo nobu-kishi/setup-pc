@@ -32,6 +32,8 @@ alias dce="docker compose exec"
 alias dcl="docker compose logs"
 alias dps="docker ps"
 alias di="docker images"
+alias dpa="docker image prune -a"
+alias dpaf="docker image prune -a -f"
 alias dr="docker rm"
 alias dri="docker rmi"
 
