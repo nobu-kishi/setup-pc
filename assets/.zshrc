@@ -18,8 +18,9 @@ alias ....="cd ../../.."
 # brew
 alias b="brew"
 alias bi="brew install"
-alias bu="brew update"
-alias bucg="brew upgrade --cask --greedy"
+alias bud="brew update"
+alias bug="brew upgrade"
+alias bugg="brew upgrade --cask --greedy"
 
 # Docker
 alias d="docker"
