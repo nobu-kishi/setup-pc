@@ -25,6 +25,7 @@ brew install --cask vlc
 brew install --cask parallels@19
 brew install --cask slack
 brew install --cask microsoft-teams
+brew install --cask zoom
 brew install --cask edrawmind
 brew install --cask drawio
 brew install --cask session-manager-plugin
