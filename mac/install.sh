@@ -18,6 +18,7 @@ brew install --cask visual-studio-code
 brew install --cask eclipse-java
 brew install --cask chatgpt
 brew install --cask commander-one
+brew install --cask tagspaces
 brew install --cask notion
 brew install --cask notion-calendar
 brew install --cask obsidian
