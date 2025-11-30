@@ -25,6 +25,9 @@ asdf set -u java "$corretto_version"
 asdf set -u golang latest
 asdf set -u terraform latest
 
+# 依存ツールのインストール
+npm i -g md-to-pdf
+
 mkdir -p "$HOME/.zsh"
 curl -o "$HOME/.zsh/git-prompt.sh" https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 curl -o "$HOME/.zsh/git-completion.bash" https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
