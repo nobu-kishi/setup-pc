@@ -31,7 +31,7 @@ brew install --cask edrawmind
 brew install --cask drawio
 brew install --cask session-manager-plugin
 brew install --cask docker
-brew install codex
+brew install --cask codex
 brew install gemini-cli
 brew install awscli
 brew install azure-cli
