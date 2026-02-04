@@ -14,6 +14,7 @@ done 2>/dev/null &
 KEEP_ALIVE_PID=$!
 
 brew install --cask microsoft-edge
+brew install --cask alt-tab
 brew install --cask visual-studio-code
 brew install --cask eclipse-java
 brew install --cask chatgpt
