@@ -41,6 +41,7 @@ brew install minamijoyo/hcledit/hcledit
 brew install direnv
 brew install asdf
 brew install git
+brew install git-lfs
 brew install gh
 brew install jq
 brew install tree
