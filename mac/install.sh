@@ -33,6 +33,8 @@ brew install --cask drawio
 brew install --cask session-manager-plugin
 brew install --cask docker
 brew install --cask codex
+brew install --cask claude
+brew install --cask claude-code
 brew install gemini-cli
 brew install awscli
 brew install azure-cli
