@@ -39,7 +39,6 @@ brew install gemini-cli
 brew install awscli
 brew install azure-cli
 brew install tflint
-brew install minamijoyo/hcledit/hcledit
 brew install direnv
 brew install asdf
 brew install git
