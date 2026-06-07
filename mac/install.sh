@@ -21,7 +21,6 @@ brew install --cask tagspaces
 brew install --cask vlc
 brew install --cask parallels@19
 brew install yt-dlp
-brew install libreoffice-language-pack --language=ja
 brew install mas
 
 # --- communication ---
@@ -52,7 +51,6 @@ brew install --cask session-manager-plugin
 brew install awscli
 brew install azure-cli
 brew install tflint
-brew install direnv
 brew install asdf
 brew install git
 brew install git-lfs
