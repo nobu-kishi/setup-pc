@@ -45,8 +45,7 @@ alias tfi="terraform init"
 alias tfiu="terraform init -upgrade"
 alias tfp="terraform plan"
 alias tfv="terraform validate"
-alias tft="terraform fmt --recursive"
-alias tftp="terraform fmt --recursive ../../"
+alias tft='terraform fmt --recursive "$(git rev-parse --show-toplevel)"'
 alias tfaa="terraform apply -auto-approve"
 function tfpl() { terraform plan -no-color | tee "plan_$(date +%Y%m%d_%H%M%S).log"; }
 function tfaal() { terraform apply -auto-approve -no-color | tee "apply_$(date +%Y%m%d_%H%M%S).log"; }
@@ -77,10 +76,6 @@ export PATH="$HOME/repo/tools/utils:$PATH"
 export PATH="$HOME/repo/tools/git:$PATH"
 export PATH="$HOME/repo/tools/docker:$PATH"
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-
-# direnv
-export EDITOR=vim
-eval "$(direnv hook zsh)"
 
 # git-prompt
 # https://qiita.com/mikan3rd/items/d41a8ca26523f950ea9d
