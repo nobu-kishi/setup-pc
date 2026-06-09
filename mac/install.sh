@@ -20,6 +20,7 @@ brew install --cask commander-one
 brew install --cask tagspaces
 brew install --cask vlc
 brew install --cask parallels@19
+brew install displayplacer
 brew install yt-dlp
 brew install mas
 
