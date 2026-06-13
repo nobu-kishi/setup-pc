@@ -53,6 +53,10 @@ brew install --cask session-manager-plugin
 brew install awscli
 brew install azure-cli
 brew install tflint
+brew install kubectl
+brew install kind
+brew install eksctl
+brew install helm
 brew install asdf
 brew install git
 brew install git-lfs
