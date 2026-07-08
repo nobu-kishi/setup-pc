@@ -11,6 +11,7 @@ alias vc="vi $HOME/.vimrc"
 alias ac="vi $HOME/.aws/config"
 alias h="history 0"
 alias hg="history 0 | grep "
+he() { local cmd=$(fc -l 1 | fzf --tac --no-sort --query="${*}" --prompt="history> " | sed 's/^ *[0-9]* *//'); [[ -n "$cmd" ]] && print -z "$cmd"; }
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -38,6 +39,18 @@ alias dpaf="docker image prune -a -f"
 alias dr="docker rm"
 alias dri="docker rmi"
 
+# Kubectl
+alias kg="kubectl get"
+alias kgp="kubectl get pods"
+alias kgpa="kubectl get pods --all-namespaces"
+alias kgs="kubectl get svc"
+alias kgd="kubectl get deployment"
+alias kgn="kubectl get nodes"
+
+autoload -Uz compinit
+compinit
+source <(kubectl completion zsh)
+
 # Terraform
 alias tf="terraform"
 alias tfc="terraform console"
@@ -47,8 +60,8 @@ alias tfp="terraform plan"
 alias tfv="terraform validate"
 alias tft='terraform fmt --recursive "$(git rev-parse --show-toplevel)"'
 alias tfaa="terraform apply -auto-approve"
-function tfpl() { terraform plan -no-color | tee "plan_$(date +%Y%m%d_%H%M%S).log"; }
-function tfaal() { terraform apply -auto-approve -no-color | tee "apply_$(date +%Y%m%d_%H%M%S).log"; }
+tfpl() { terraform plan -no-color | tee "plan_$(date +%Y%m%d_%H%M%S).log"; }
+tfaal() { terraform apply -auto-approve -no-color | tee "apply_$(date +%Y%m%d_%H%M%S).log"; }
 
 # git
 alias g="git"
@@ -70,11 +83,7 @@ alias gra="git rebase --abort"
 alias grs="git rebase --skip"
 
 # path
-export PATH="$HOME/repo/tools/aws:$PATH"
-export PATH="$HOME/repo/tools/azure:$PATH"
-export PATH="$HOME/repo/tools/utils:$PATH"
-export PATH="$HOME/repo/tools/git:$PATH"
-export PATH="$HOME/repo/tools/docker:$PATH"
+export PATH="$HOME/repo/tools/bin:$PATH"
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # git-prompt
