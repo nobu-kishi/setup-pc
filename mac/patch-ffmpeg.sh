@@ -8,6 +8,7 @@ PATCH_URL="https://github.com/yt-dlp/FFmpeg-Builds/blob/master/patches/ffmpeg/re
 FORMULA_URL="https://raw.githubusercontent.com/homebrew-ffmpeg/homebrew-ffmpeg/master/Formula/ffmpeg.rb"
 FORMULA_FILE="ffmpeg.rb"
 PATCH_BLOCK_FILE="patch_block.txt"
+TAP_NAME="local/ffmpeg-patched"
 
 echo "⬇️ Formula を取得中..."
 curl -sSL "$FORMULA_URL" -o "$FORMULA_FILE"
@@ -49,10 +50,25 @@ awk -v patch_file="$PATCH_BLOCK_FILE" '
   }
 ' "$FORMULA_FILE" >"${FORMULA_FILE}.tmp" && mv "${FORMULA_FILE}.tmp" "$FORMULA_FILE"
 
-echo "🍺 Homebrew で ffmpeg をインストール中（カスタムFormula）..."
-brew install --formula "./$FORMULA_FILE"
+echo "🏠 ローカルタップを準備中..."
+# Homebrew はタップに属さないローカルの formula を直接 install できないため、
+# 自前のタップを作りそこに formula を配置する
+if ! brew tap | grep -qx "$TAP_NAME"; then
+  brew tap-new "$TAP_NAME" --no-git
+fi
+TAP_REPO="$(brew --repo "$TAP_NAME")"
+cp "$FORMULA_FILE" "$TAP_REPO/Formula/ffmpeg.rb"
 
-echo "🎉 インストール完了！"
+echo "🍺 Homebrew で ffmpeg をインストール中（カスタムFormula）..."
+brew install --formula "$TAP_NAME/ffmpeg"
+INSTALL_STATUS=$?
 
 rm -rf "$FORMULA_FILE" "$PATCH_BLOCK_FILE"
 echo "🗑️ 一時ファイルを削除しました。"
+
+if [ $INSTALL_STATUS -ne 0 ]; then
+  echo "❌ インストールに失敗しました"
+  exit 1
+fi
+
+echo "🎉 インストール完了！"
