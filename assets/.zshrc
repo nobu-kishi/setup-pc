@@ -84,7 +84,7 @@ alias grs="git rebase --skip"
 
 # path
 export PATH="$HOME/repo/tools/bin:$PATH"
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+eval "$(mise activate zsh)"
 
 # git-prompt
 # https://qiita.com/mikan3rd/items/d41a8ca26523f950ea9d
