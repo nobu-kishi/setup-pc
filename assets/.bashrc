@@ -61,7 +61,5 @@ alias grs="git rebase --skip"
 # other
 alias pip="python -m pip" # mise経由で実行するためalias化
 
-# miseをgit bashで使うためのパッチ処理も行う
-# https://github.com/jdx/mise/discussions/3961?utm_source=chatgpt.com#discussioncomment-15286600
 # https://mise.jdx.dev/getting-started.html
-eval "$(mise activate bash | sed 's|eval "$(mise hook-env -s bash)";|& export PATH="$(/usr/bin/cygpath -u -p "$PATH")";|')"
+eval "$(mise activate bash)"
