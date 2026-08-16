@@ -15,6 +15,7 @@ he() { local cmd=$(fc -l 1 | fzf --tac --no-sort --query="${*}" --prompt="histor
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+alias ds="pmset displaysleepnow"
 
 # brew
 alias b="brew"
@@ -83,7 +84,7 @@ alias gra="git rebase --abort"
 alias grs="git rebase --skip"
 
 # path
-export PATH="$HOME/repo/tools/bin:$PATH"
+export PATH="$HOME/repo/.config/tools/bin:$PATH"
 eval "$(mise activate zsh)"
 
 # git-prompt
