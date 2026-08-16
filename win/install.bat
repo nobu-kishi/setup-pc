@@ -15,12 +15,12 @@ winget install --id jdx.mise %OPTION%
 winget install --id sakura-editor.sakura %OPTION%
 
 :: mise
-mise install python@3.14.2
-mise use -g pythohn@3.14.2
-mise install java@temurin-21.0.9+10.0.LTS
-mise use -g java@temurin-21.0.9+10.0.LTS
-mise install terraform@1.14.3
-mise use -g terraform@1.14.3
+:: Install and set global version at once (run without -g to set per project)
+mise use -g node@latest
+mise use -g python@latest
+mise use -g java@corretto-21
+mise use -g go@latest
+mise use -g terraform@latest
 
 echo "Done."
 endlocal

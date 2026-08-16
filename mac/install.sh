@@ -71,13 +71,10 @@ brew install fzf
 brew install neovim
 
 # --- mise ---
-# Corretto 21系の最新バージョン取得
-corretto_version=$(mise ls-remote java | grep '^corretto-21' | sort -V | tail -n 1)
-
 # インストールとグローバル設定を同時に行う（プロジェクト毎に設定したい場合は、-gオプションなしで実行）
 mise use -g node@latest
 mise use -g python@latest
-mise use -g java@"$corretto_version"
+mise use -g java@corretto-21
 mise use -g go@latest
 mise use -g terraform@latest
 
