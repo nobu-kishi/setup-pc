@@ -17,6 +17,9 @@ winget install --id VideoLAN.VLC %OPTION%
 winget install --id jdx.mise %OPTION%
 winget install --id sakura-editor.sakura %OPTION%
 
+:: autohotkey
+copy /Y "%~dp0jis-to-us.ahk" "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\jis-to-us.ahk"
+
 :: mise
 :: Install and set global version at once (run without -g to set per project)
 mise use -g node@latest
