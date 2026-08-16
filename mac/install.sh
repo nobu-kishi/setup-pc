@@ -24,6 +24,7 @@ brew install --cask vlc
 brew install --cask parallels@19
 brew install --cask raycast
 brew install --cask rectangle
+brew install switchaudio-osx
 brew install displayplacer
 brew install yt-dlp
 brew install mas
