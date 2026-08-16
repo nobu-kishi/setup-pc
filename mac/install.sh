@@ -16,6 +16,7 @@ KEEP_ALIVE_PID=$!
 
 # --- general ---
 brew install --cask google-chrome
+brew install --cask bettertouchtool
 brew install --cask alt-tab
 brew install --cask commander-one
 brew install --cask tagspaces
