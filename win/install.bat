@@ -8,7 +8,10 @@ echo "Starting..."
 winget install --id 7zip.7zip %OPTION%
 winget install --id Amazon.AWSCLI %OPTION%
 winget install --id Anthropic.ClaudeCode %OPTION%
+winget install --id AutoHotkey.AutoHotkey %OPTION%
 winget install --id Git.Git %OPTION%
+winget install --id Google.Chrome %OPTION%
+winget install --id junegunn.fzf %OPTION%
 winget install --id SoftwareOK.Q-Dir %OPTION%
 winget install --id VideoLAN.VLC %OPTION%
 winget install --id jdx.mise %OPTION%
