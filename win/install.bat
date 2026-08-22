@@ -27,6 +27,7 @@ mise use -g python@latest
 mise use -g java@corretto-21
 mise use -g go@latest
 mise use -g terraform@latest
+mise use -g uv@latest
 
 echo "Done."
 endlocal
