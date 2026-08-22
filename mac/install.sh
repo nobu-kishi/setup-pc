@@ -72,15 +72,15 @@ brew install neovim
 
 # --- mise ---
 # インストールとグローバル設定を同時に行う（プロジェクト毎に設定したい場合は、-gオプションなしで実行）
-mise use -g node@latest
+mise use -g bun@latest
 mise use -g python@latest
 mise use -g java@corretto-21
 mise use -g go@latest
 mise use -g terraform@latest
 mise use -g uv@latest
 
-# 依存ツールのインストール（mise管理下のnodeを使って実行）
-mise exec -- npm i -g md-to-pdf
+# 依存ツールのインストール（mise管理下のbunを使って実行）
+mise exec -- bun i -g md-to-pdf
 
 # --- Mac App Store ---
 # Kindle

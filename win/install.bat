@@ -22,7 +22,7 @@ copy /Y "%~dp0jis-to-us.ahk" "%APPDATA%\Microsoft\Windows\Start Menu\Programs\St
 
 :: mise
 :: Install and set global version at once (run without -g to set per project)
-mise use -g node@latest
+mise use -g bun@latest
 mise use -g python@latest
 mise use -g java@corretto-21
 mise use -g go@latest
